@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+* { margin: 0; padding: 0; border: 0; outline: 0; }
+
+body {
+  background: #444444 url("http://nickbrombal.com/images/bg_pixel-grey.jpg") repeat fixed;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 560px;
+  padding-top: 100px;
+}
+
+h1 {
+  margin-top: 10px;
+  font: 30px roboto;
+  text-align: center;
+  color: #FFF;
+}
+
+#card {
+  position: absolute;
+  margin: 0 auto;
+  border-spacing: 10px;
+  border-collapse: separate;
+  text-align: center;
+}
+td {
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    background: #777;
+    cursor: pointer;
+}
+a { 
+  text-decoration: none; 
+  color: #fff; 
+  font: 40px arial;
+}
+a:hover { text-shadow: 2px 2px #111; }
+
