@@ -6,46 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Bingo</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+      var toggle = false;
+      function changeColor(e) {
+        toggle = !toggle;
+        document.getElementById(e).style.backgroundColor = toggle? "#7FB77E": "#DF7861";
+      }   
+    </script>
 </head>
 <body>
+  <div id="container">
     <div id="wrapper">
-        <h1>Welcome to Code Bingo</h1>
-        <table id="card">
-          <tr>
-            <td id="cell0"><a href="#">17</a></td>
-            <td id="cell1"><a href="#">24</a></td>
-            <td id="cell2"><a href="#">1</a></td>
-            <td id="cell3"><a href="#">8</a></td>
-            <td id="cell4"><a href="#">15</a></td>
-          </tr>
-          <tr>
-            <td id="cell5"><a href="#">23</a></td>
-            <td id="cell6"><a href="#">5</a></td>
-            <td id="cell7"><a href="#">7</a></td>
-            <td id="cell8"><a href="#">14</a></td>
-            <td id="cell9"><a href="#">16</a></td>
-          </tr>
-          <tr>
-            <td id="cell10"><a href="#">4</a></td>
-            <td id="cell11"><a href="#">6</a></td>
-            <td id="cell12"><a href="#">13</a></td>
-            <td id="cell13"><a href="#">20</a></td>
-            <td id="cell14"><a href="#">22</a></td>
-          </tr>
-          <tr>
-            <td id="cell15"><a href="#">10</a></td>
-            <td id="cell16"><a href="#">12</a></td>
-            <td id="cell17"><a href="#">19</a></td>
-            <td id="cell18"><a href="#">21</a></td>
-            <td id="cell19"><a href="#">3</a></td>
-          </tr>
-          <tr>
-            <td id="cell20"><a href="#">11</a></td>
-            <td id="cell21"><a href="#">18</a></td>
-            <td id="cell22"><a href="#">25</a></td>
-            <td id="cell23"><a href="#">2</a></td>
-            <td id="cell24"><a href="#">9</a></td>
-          </tr>
-        </table>
+      <h1>Welcome to Code Bingo</h1>
+      <table id="card">
+        <tr>
+          <td id="cell0" onclick="changeColor('cell0')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/compare-the-triplets">17</a></td>
+          <td id="cell1" onclick="changeColor('cell1')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/pointer-in-c">24</a></td>
+          <td id="cell2" onclick="changeColor('cell2')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/reverse-array-c">1</a></td>
+          <td id="cell3" onclick="changeColor('cell3')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/small-triangles-large-triangles">8</a></td>
+          <td id="cell4" onclick="changeColor('cell4')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/save-the-prisoner">15</a></td>
+        </tr>
+        <tr>
+          <td id="cell5" onclick="changeColor('cell5')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/frequency-of-digits-1">23</a></td>
+          <td id="cell6" onclick="changeColor('cell6')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/circular-array-rotation">5</a></td>
+          <td id="cell7" onclick="changeColor('cell7')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/playing-with-characters">7</a></td>
+          <td id="cell8" onclick="changeColor('cell8')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/for-loop-in-c">14</a></td>
+          <td id="cell9" onclick="changeColor('cell9')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/students-marks-sum">16</a></td>
+        </tr>
+        <tr>
+          <td id="cell10" onclick="changeColor('cell10')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/append-and-delete">4</a></td>
+          <td id="cell11" onclick="changeColor('cell11')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/bitwise-operators-in-c">6</a></td>
+          <td id="cell12" onclick="changeColor('cell12')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/sum-of-digits-of-a-five-digit-number">13</a></td>
+          <td id="cell13" onclick="changeColor('cell13')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/recursion-in-c">20</a></td>
+          <td id="cell14" onclick="changeColor('cell14')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/sum-numbers-c">22</a></td>
+        </tr>
+        <tr>
+          <td id="cell15" onclick="changeColor('cell15')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/too-high-boxes">10</a></td>
+          <td id="cell16" onclick="changeColor('cell16')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/printing-tokens-">12</a></td>
+          <td id="cell17" onclick="changeColor('cell17')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/strange-code">19</a></td>
+          <td id="cell18" onclick="changeColor('cell18')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/dynamic-array-in-c">21</a></td>
+          <td id="cell19" onclick="changeColor('cell19')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/1d-arrays-in-c">3</a></td>
+        </tr>
+        <tr>
+          <td id="cell20" onclick="changeColor('cell20')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/conditional-statements-in-c">11</a></td>
+          <td id="cell21" onclick="changeColor('cell21')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/plus-minus">18</a></td>
+          <td id="cell22" onclick="changeColor('cell22')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/solve-me-first">25</a></td>
+          <td id="cell23" onclick="changeColor('cell23')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/kaprekar-numbers">2</a></td>
+          <td id="cell24" onclick="changeColor('cell24')"><a onclick="return false" ondblclick="window.open(this.href)" href="https://www.hackerrank.com/contests/code-bingo/challenges/printing-pattern-2">9</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="clear-btn">
+      <button onclick="window.location.reload();">Clear board</button>
+    </div>
+  </div>
+  
 </body>
 </html>

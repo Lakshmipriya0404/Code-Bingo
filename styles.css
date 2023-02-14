@@ -3,40 +3,62 @@
 * { margin: 0; padding: 0; border: 0; outline: 0; }
 
 body {
-  background: #444444 url("http://nickbrombal.com/images/bg_pixel-grey.jpg") repeat fixed;
+  background: #FFD4D4;
+	font-family: "Nunito", sans-serif;  
 }
 
 #wrapper {
-  margin: 0 auto;
-  width: 560px;
-  padding-top: 100px;
+  max-width: 600px; 
+  margin: 1.5em auto;
+  background-color: #f7d75c; 
 }
 
 h1 {
-  margin-top: 10px;
-  font: 30px roboto;
+  background-color: #fdb90b;
+	color: #B05A7A;
+  padding: 30px 10px;
   text-align: center;
-  color: #FFF;
+	font: 52px/0.9 "Amatic SC", cursive;  
 }
 
 #card {
-  position: absolute;
   margin: 0 auto;
   border-spacing: 10px;
   border-collapse: separate;
-  text-align: center;
+  text-align: center;   
 }
+
 td {
     padding: 10px;
     height: 80px;
     width: 80px;
-    background: #777;
+    background: #f9f59e;
     cursor: pointer;
 }
+
 a { 
   text-decoration: none; 
-  color: #fff; 
-  font: 40px arial;
+  color: #000; 
+  font: 28px "Caveat Brush", cursive;
 }
-a:hover { text-shadow: 2px 2px #111; }
+/* a:hover { text-shadow: 2px 2px #111; } */
+.clear-btn{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+button{
+  font: 700 16px 'Nunito', sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 2px dotted;
+	color: #fdb90b;
+	padding: 8px 10px;
+  margin-bottom: 5px; 
+  background: #B05A7A;
+}
+
+button:hover{
+  color: #f2ae00;
+}
